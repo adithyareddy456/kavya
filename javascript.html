@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="kavya.css">
+    </head>
+    <body>
+        <h1> KAVYA </h1>
+        <p> THIS IS "KAVYA" with id="demo"</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+        <p id="demo10"></p>
+        <p id="demo11"></p>
+        <p id="demo12"></p>
+        <p id="demo13"></p>
+        <p id="demo14"></p>
+        <p id="demo15"></p>
+        <p id="demo16"></p>
+        <p id="demo17"></p>
+        <p id="demo18"></p>
+        <p id="demo19"></p>
+        <p id="demo20"></p>
+        <p id="demo21"></p>
+        <p id="demo22"></p>
+        <p id="demo23"></p>
+        <p id="demo24"></p>
+        <p id="demo25"></p>   
+        <p id="demo26"></p> 
+        <p id="demo27"></p>
+        <p id="demo28"></p>
+        <p id="demo29"></p>
+        <p id="demo30"></p>
+        <p id="demo31"></p>
+
+        <button onclick="document.getElementById('demo18').innerHTML=Date()">Time is</button>
+        
+        <script>
+            document.getElementById("demo").innerHTML="HELLO EVERYONE";
+            //document.getElementById("demo").style.backgroundColor="yellow";
+            
+        </script>
+        <script>
+            let a,b,c;  //declare a,b,c
+            c=5;        //assign value to a
+            b=6;       /* assign value to b and add
+                          b and c */
+            a=b+c;
+            document.getElementById("demo1").innerHTML=a;
+            document.getElementById("demo2").innerHTML=10.30;
+
+        </script>
+        <script>
+            //declaring variables
+            var x=10;
+            var y=20;
+            var z=x+y;
+            document.getElementById("demo3").innerHTML="the value of z is:"+z;
+        </script>
+        <script>
+            //assignment operator
+            var x=5;
+            x=x+5;
+            document.getElementById("demo4").innerHTML="the value of x:"+x;
+            // datatypes
+            var pi=3.14;
+            var car="toyata";
+            //declaring the variable and assign the values
+            var car="nano"
+            document.getElementById("demo5").innerHTML= car;
+            //one statement and  many variables
+            var name="KAVYA"; age="21"; gender="female";
+            document.getElementById("demo6").innerHTML= name;
+            document.getElementById("demo7").innerHTML= age;
+            document.getElementById("demo8").innerHTML= gender;
+
+            var z="kavya"+" "+"Reddy";
+            document.getElementById("demo9").innerHTML=z;
+            var y="4"+5+5;
+            document.getElementById("demo10").innerHTML=y;
+            var x=7+5+"4";
+            document.getElementById("demo11").innerHTML=x;
+            var $=9;
+            var $$=19;
+            var $$$=$$+$;
+            document.getElementById("demo12").innerHTML=$$$;
+            var _=6;
+            var __=7;
+            var ___=_+__;
+            document.getElementById("demo13").innerHTML=___;
+            var x=10;
+            {
+                var x=2;
+            }
+            document.getElementById("demo14").innerHTML=x;
+            </script>
+            <script>
+            var length=16;                      //Number
+            var car="Volvo";                     //String
+            var obj={first:"kavya",last:"Reddy"};    //object
+            document.getElementById("demo15").innerHTML=obj.first;
+            </script>
+            <script>
+                function hello(p,q){
+                    return p*q;
+                }
+                document.getElementById("demo16").innerHTML=hello(5,4);
+            
+            </script>
+            <script>
+                var details={name:"kavya",age:22,gender:"female"};
+                document.getElementById("demo17").innerHTML='my name is'+ details.name;
+            </script>
+            <script>
+                const cars=[];
+                cars[0]="nano";
+                cars[1]="toyato";
+                cars[2]="Volvo";
+                document.getElementById("demo19").innerHTML=cars[1];
+            </script>
+            <script>
+                const names=["kavya","liki","ruchi"];
+                names[0]="nandu";
+                document.getElementById("demo20").innerHTML=names[0];
+            </script>
+            <script>
+                const names1=["pooja","krish","vaishu","samu"];
+                document.getElementById("demo21").innerHTML=names1.toString();
+            </script>
+            <script>
+                const fruits=["apple","banana","orange","strawberry"];
+                document.getElementById("demo22").innerHTML=fruits.join(".");
+            </script>
+            <script>
+                const vegetables=["brinjal","tomato","bottlegourd","ladysfinger"];
+                document.getElementById("demo23").innerHTML=vegetables;
+                document.getElementById("demo24").innerHTML=vegetables.pop();
+                document.getElementById("demo25").innerHTML=vegetables;
+            </script>
+            <script>
+                const numbers=[1,2,3,4,5];
+                document.getElementById("demo26").innerHTML=numbers.push(6);
+                document.getElementById("demo27").innerHTML=numbers;
+                console.log("hello world");
+                let people=20;
+                people=10;
+                console.log(people);
+                //string,numbers,boolean,null,undefined
+                const p="kavya";
+                const q=10;
+                const d=10.7;
+                const w=true;
+                const h=null;
+                const f=undefined;
+                let l;
+                console.log(typeof f);
+                const name='kavya';
+                const age='22';
+                const g="hello,world";
+                console.log(' my name is ' + name + ' and age is ' +age);
+                console.log(`my name is ${name} and age is ${age}`);
+                console.log(name.length);
+                console.log(name.toUpperCase());
+                console.log(name.toLowerCase());
+                console.log(name.substring(0,4));
+                console.log(name.substring(0,4).toUpperCase());
+                console.log(g.split(","));
+                const array=[1,2,3,4,5];
+                array[5]=6;
+                array.unshift(7);
+                console.log([array]);
+                // console.log(array.isArray(1));            //doubt
+                console.log(array.indexOf(6));
+                //boolean
+                console.log(Boolean(5>6));
+                console.log(Boolean(100));
+                console.log(Boolean(1+2+"hello"));
+                console.log(Boolean(true));                //doubt
+                let u=false;
+                console.log(typeof u);
+                let len=new Boolean(false);
+                console.log(typeof len);
+
+                </script>
+                <script>
+                    let you=5;
+                    document.getElementById("demo28").innerHTML=(you==5);
+                    
+
+                </script>
+                <script>
+                    let pot=4;
+                    let poj=8;
+                    document.getElementById("demo29").innerHTML=(pot>2&&poj<9);
+
+                </script>
+                <script>
+                    let your=9;
+                    let yours;
+                    if(your>=9){
+                        yours="hi";
+                    }
+                    else{
+                        yours="hello";
+                    }
+                    document.getElementById("demo30").innerHTML=yours;
+
+                </script>
+                <script>
+                    let day="0";
+                    switch(day){
+                        case 0:
+                            rat ="sunday";
+                            break;
+                        case 1:
+                            rat ="monday";
+                            break;
+                        default:
+                            rat ="sat";
+                        }
+                    document.getElementById("demo31").innerHTML=rat;
+                    
+
+                </script>
+               
+
+     </body>   
+</html>
